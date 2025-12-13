@@ -1,0 +1,2693 @@
+[
+  {
+    "api": "NRF",
+    "path": "/nf-instances",
+    "method": "GET",
+    "summary": "Retrieves a collection of NF Instances",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:nf-instances:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/nf-instances",
+    "method": "OPTIONS",
+    "summary": "Discover communication options supported by NRF for NF Instances",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "405",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "NRF",
+    "path": "/nf-instances/{nfInstanceID}",
+    "method": "GET",
+    "summary": "Read the profile of a given NF Instance",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:nf-instances:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/nf-instances/{nfInstanceID}",
+    "method": "PUT",
+    "summary": "Register a new NF Instance",
+    "response_codes": [
+      "200",
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:nf-instance:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/nf-instances/{nfInstanceID}",
+    "method": "PATCH",
+    "summary": "Update NF Instance profile",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "403",
+      "404",
+      "409",
+      "411",
+      "412",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:nf-instance:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/nf-instances/{nfInstanceID}",
+    "method": "DELETE",
+    "summary": "Deregisters a given NF Instance",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:nf-instance:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/shared-data",
+    "method": "GET",
+    "summary": "Retrieves a collection of Shared Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:shared-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/shared-data/{sharedDataId}",
+    "method": "GET",
+    "summary": "Read the shared data identified by a given NF sharedDataId",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:shared-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/shared-data/{sharedDataId}",
+    "method": "PUT",
+    "summary": "Register new Shared Data",
+    "response_codes": [
+      "200",
+      "201",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:shared-data:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/shared-data/{sharedDataId}",
+    "method": "PATCH",
+    "summary": "Update Shared Data",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "403",
+      "404",
+      "409",
+      "411",
+      "412",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:shared-data:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/shared-data/{sharedDataId}",
+    "method": "DELETE",
+    "summary": "Delete Shared Data identified by a given sharedDataId",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:shared-data:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/subscriptions",
+    "method": "POST",
+    "summary": "Create a new subscription",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nnrf-nfm",
+          "nnrf-nfm:subscriptions:subs-complete-profile"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "NRF",
+    "path": "/subscriptions/{subscriptionID}",
+    "method": "PATCH",
+    "summary": "Updates a subscription",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "NRF",
+    "path": "/subscriptions/{subscriptionID}",
+    "method": "DELETE",
+    "summary": "Deletes a subscription",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}",
+    "method": "GET",
+    "summary": "retrieve multiple data sets",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:multi-data-sets:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/nssai",
+    "method": "GET",
+    "summary": "retrieve a UE's subscribed NSSAI",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:nssai:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/ue-context-in-amf-data",
+    "method": "GET",
+    "summary": "retrieve a UE's UE Context In AMF Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:ue-context-in-amf-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Access and Mobility Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:am-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/ecr-data",
+    "method": "GET",
+    "summary": "retrieve a UE's subscribed Enhanced Coverage Restriction Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "466",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:ecr-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/smf-select-data",
+    "method": "GET",
+    "summary": "retrieve a UE's SMF Selection Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:smf-select-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/ue-context-in-smf-data",
+    "method": "GET",
+    "summary": "retrieve a UE's UE Context In SMF Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:ue-context-in-smf-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/ue-context-in-smsf-data",
+    "method": "GET",
+    "summary": "retrieve a UE's UE Context In SMSF Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:ue-context-in-smsf-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/trace-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Trace Configuration Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:trace-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/sm-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Session Management Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sm-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/sms-data",
+    "method": "GET",
+    "summary": "retrieve a UE's SMS Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sms-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/sms-mng-data",
+    "method": "GET",
+    "summary": "retrieve a UE's SMS Management Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sms-mng-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/lcs-privacy-data",
+    "method": "GET",
+    "summary": "retrieve a UE's LCS Privacy Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:lcs-privacy-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/lcs-mo-data",
+    "method": "GET",
+    "summary": "retrieve a UE's LCS Mobile Originated Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:lcs-mo-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/lcs-bca-data",
+    "method": "GET",
+    "summary": "retrieve a UE's LCS Broadcast Assistance Data Types Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:lcs-bca-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/lcs-subscription-data",
+    "method": "GET",
+    "summary": "retrieve a UE's LCS Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:lcs-subscription-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/v2x-data",
+    "method": "GET",
+    "summary": "retrieve a UE's V2X Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:v2x-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/prose-data",
+    "method": "GET",
+    "summary": "retrieve a UE's ProSe Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:prose-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/5mbs-data",
+    "method": "GET",
+    "summary": "retrieve a UE's 5MBS Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:5mbs-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/uc-data",
+    "method": "GET",
+    "summary": "retrieve a UE's User Consent Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:uc-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/sdm-subscriptions",
+    "method": "POST",
+    "summary": "subscribe to notifications",
+    "response_codes": [
+      "201",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "501",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sdm-subscriptions:create"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/sdm-subscriptions/{subscriptionId}",
+    "method": "DELETE",
+    "summary": "unsubscribe from notifications",
+    "response_codes": [
+      "204",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sdm-subscriptions:modify"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/sdm-subscriptions/{subscriptionId}",
+    "method": "PATCH",
+    "summary": "modify the subscription",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sdm-subscriptions:modify"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/id-translation-result",
+    "method": "GET",
+    "summary": "retrieve a UE's SUPI or GPSI",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:id-translation-result:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/sor-ack",
+    "method": "PUT",
+    "summary": "Nudm_Sdm Info service operation",
+    "response_codes": [
+      "204",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:sor-ack:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/upu-ack",
+    "method": "PUT",
+    "summary": "Nudm_Sdm Info for UPU service operation",
+    "response_codes": [
+      "204",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:upu-ack:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/subscribed-snssais-ack",
+    "method": "PUT",
+    "summary": "Nudm_Sdm Info operation for S-NSSAIs acknowledgement",
+    "response_codes": [
+      "204",
+      "400",
+      "500",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:subscribed-nssais-ack:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/cag-ack",
+    "method": "PUT",
+    "summary": "Nudm_Sdm Info operation for CAG acknowledgement",
+    "response_codes": [
+      "204",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:cag-ack:write"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/am-data/update-sor",
+    "method": "POST",
+    "summary": "Nudm_Sdm custom operation to trigger SOR info update",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:update-sor:invoke"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/shared-data",
+    "method": "GET",
+    "summary": "retrieve shared data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:shared-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/shared-data-subscriptions",
+    "method": "POST",
+    "summary": "subscribe to notifications for shared data",
+    "response_codes": [
+      "201",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:shared-data-subscriptions:create"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/shared-data-subscriptions/{subscriptionId}",
+    "method": "DELETE",
+    "summary": "unsubscribe from notifications for shared data",
+    "response_codes": [
+      "204",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:shared-data-subscriptions:modify"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/shared-data-subscriptions/{subscriptionId}",
+    "method": "PATCH",
+    "summary": "modify the subscription",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:shared-data-subscriptions:modify"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/group-data/group-identifiers",
+    "method": "GET",
+    "summary": "Mapping of Group Identifiers",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:group-identifiers:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/shared-data/{sharedDataId}",
+    "method": "GET",
+    "summary": "retrieve the individual shared data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:shared-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/multiple-identifiers",
+    "method": "GET",
+    "summary": "Mapping of UE Identifiers",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:multiple-identifiers:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/time-sync-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Time Synchronization Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/ranging-slpos-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Ranging and Sidelink Positioning Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:ranging-slpos:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{supi}/a2x-data",
+    "method": "GET",
+    "summary": "retrieve a UE's A2X Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:a2x-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "UDM",
+    "path": "/{ueId}/rangingsl-privacy-data",
+    "method": "GET",
+    "summary": "retrieve a UE's Ranging and Sidelink Positioning Privacy Subscription Data",
+    "response_codes": [
+      "200",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "nudm-sdm",
+          "nudm-sdm:rangingsl-privacy-data:read"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}",
+    "method": "PUT",
+    "summary": "Namf_Communication CreateUEContext service Operation",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/release",
+    "method": "POST",
+    "summary": "Namf_Communication ReleaseUEContext service Operation",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/assign-ebi",
+    "method": "POST",
+    "summary": "Namf_Communication EBI Assignment service Operation",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "409",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:assign-ebi"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/transfer",
+    "method": "POST",
+    "summary": "Namf_Communication UEContextTransfer service Operation",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/transfer-update",
+    "method": "POST",
+    "summary": "Namf_Communication RegistrationStatusUpdate service Operation",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/relocate",
+    "method": "POST",
+    "summary": "Namf_Communication RelocateUEContext service Operation",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/cancel-relocate",
+    "method": "POST",
+    "summary": "Namf_Communication CancelRelocateUEContext service Operation",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:ue-contexts:mobility"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/n1-n2-messages",
+    "method": "POST",
+    "summary": "Namf_Communication N1N2 Message Transfer (UE Specific) service Operation",
+    "response_codes": [
+      "202",
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "409",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:n1-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/n1-n2-messages/subscriptions",
+    "method": "POST",
+    "summary": "Namf_Communication N1N2 Message Subscribe (UE Specific) service Operation",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:n1-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/ue-contexts/{ueContextId}/n1-n2-messages/subscriptions/{subscriptionId}",
+    "method": "DELETE",
+    "summary": "Namf_Communication N1N2 Message UnSubscribe (UE Specific) service Operation",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:n1-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/non-ue-n2-messages/transfer",
+    "method": "POST",
+    "summary": "Namf_Communication Non UE N2 Message Transfer service Operation",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:non-ue-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/non-ue-n2-messages/subscriptions",
+    "method": "POST",
+    "summary": "Namf_Communication Non UE N2 Info Subscribe service Operation",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:non-ue-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/non-ue-n2-messages/subscriptions/{n2NotifySubscriptionId}",
+    "method": "DELETE",
+    "summary": "Namf_Communication Non UE N2 Info UnSubscribe service Operation",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "502",
+      "503"
+    ],
+    "security": [
+      {},
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm"
+        ]
+      },
+      {
+        "oAuth2ClientCredentials": [
+          "namf-comm",
+          "namf-comm:non-ue-n2-messages"
+        ]
+      }
+    ]
+  },
+  {
+    "api": "AMF",
+    "path": "/subscriptions",
+    "method": "POST",
+    "summary": "Namf_Communication AMF Status Change Subscribe service Operation",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "AMF",
+    "path": "/subscriptions/{subscriptionId}",
+    "method": "DELETE",
+    "summary": "Namf_Communication AMF Status Change UnSubscribe service Operation",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "AMF",
+    "path": "/subscriptions/{subscriptionId}",
+    "method": "PUT",
+    "summary": "Namf_Communication AMF Status Change Subscribe Modify service Operation",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/sm-contexts",
+    "method": "POST",
+    "summary": "Create SM Context",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/sm-contexts/{smContextRef}/retrieve",
+    "method": "POST",
+    "summary": "Retrieve SM Context",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/sm-contexts/{smContextRef}/modify",
+    "method": "POST",
+    "summary": "Update SM Context",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/sm-contexts/{smContextRef}/release",
+    "method": "POST",
+    "summary": "Release SM Context",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/sm-contexts/{smContextRef}/send-mo-data",
+    "method": "POST",
+    "summary": "Send MO Data",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/pdu-sessions",
+    "method": "POST",
+    "summary": "Create",
+    "response_codes": [
+      "201",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/pdu-sessions/{pduSessionRef}/modify",
+    "method": "POST",
+    "summary": "Update (initiated by V-SMF or I-SMF)",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/pdu-sessions/{pduSessionRef}/release",
+    "method": "POST",
+    "summary": "Release",
+    "response_codes": [
+      "200",
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/pdu-sessions/{pduSessionRef}/retrieve",
+    "method": "POST",
+    "summary": "Retrieve",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "504",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "SMF",
+    "path": "/pdu-sessions/{pduSessionRef}/transfer-mo-data",
+    "method": "POST",
+    "summary": "Transfer MO Data",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "PCF",
+    "path": "/sm-policies",
+    "method": "POST",
+    "summary": "Create a new Individual SM Policy.",
+    "response_codes": [
+      "201",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "PCF",
+    "path": "/sm-policies/{smPolicyId}",
+    "method": "GET",
+    "summary": "Read an Individual SM Policy",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "406",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "PCF",
+    "path": "/sm-policies/{smPolicyId}/update",
+    "method": "POST",
+    "summary": "Update an existing Individual SM Policy",
+    "response_codes": [
+      "200",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "500",
+      "502",
+      "503",
+      "default"
+    ],
+    "security": null
+  },
+  {
+    "api": "PCF",
+    "path": "/sm-policies/{smPolicyId}/delete",
+    "method": "POST",
+    "summary": "Delete an existing Individual SM Policy.",
+    "response_codes": [
+      "204",
+      "307",
+      "308",
+      "400",
+      "401",
+      "403",
+      "404",
+      "411",
+      "413",
+      "415",
+      "429",
+      "502",
+      "500",
+      "503",
+      "default"
+    ],
+    "security": null
+  }
+]
